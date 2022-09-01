@@ -21,6 +21,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: white;
     background-color: var(--back);
 
 }
@@ -118,4 +119,51 @@ input:hover::placeholder{
 .rep{
     padding-top: 10px;
 }
+.outer{
+    margin:  40px 0;
+    width: 600px;
+    color: white;
+    height: 400px;
+    /* border-radius: 5px; */
+    border: 2px solid royalblue;
+    display: flex;
+    padding: 2px;
+}
+.img1{
+    width: 300px;
+    padding: 2px;
+    height: 390px;
+}
+.img1 img{
+    width: inherit;
+    height: inherit;
+    /* object-fit: cover; */
+}
 
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+padding: 15px;
+}
+.details p{
+    font-size: 12px;
+}
+.extr{
+    display: flex;
+    
+}
+.extr h4{
+    padding: 0 10px;
+}
+.inner h2,h5{
+    padding: 10px;
+}
+button{
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    /* border-radius: 5px; */
+}

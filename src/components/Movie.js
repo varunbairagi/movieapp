@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
-
+import { NavLink } from "react-router-dom";
 const Movie = (props) => {
-  const {poster_path,title,vote_average,original_language,overview,release_date}=props.resp;
+  const {poster_path,title,vote_average,original_language,release_date}=props.resp;
   
   return (
     <>
@@ -21,6 +21,7 @@ const Movie = (props) => {
             <div className="rep">release_date: {release_date}</div>
             <div className="rep">language:{original_language}</div>
             <div className="rep">⭐Imdb Rating:{vote_average}</div>
+            <NavLink to={`/${props.id}`}><button>Show More</button></NavLink>
           </div>
         </div>
       </div>
